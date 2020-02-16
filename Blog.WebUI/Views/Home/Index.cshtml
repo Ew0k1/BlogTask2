@@ -1,0 +1,84 @@
+﻿@model List<Blog.Domain.Entities.Article>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<h1>Home</h1>
+<section class="articles">
+    @foreach (var item in Model)
+    {
+        <article class="card article-preview">
+            <div class="card-body ">
+                <h4 class="card-title">@item.Name</h4>
+                <p class="card-text">@item.Text</p>
+                <a href="#" class="card-link">Card link</a>
+            </div>
+            <div class="card-footer">
+                <p class="card-text"> @item.Date.ToShortDateString()</p>
+            </div>
+        </article>
+    }
+
+    <article class="card article-preview">
+        <div class="card-body ">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet volutpat consequat mauris nunc congue. Dapibus ultrices in iaculis nunc sed augue lacus viverra.
+            </p>
+            <a href="#" class="card-link">Card link</a>
+        </div>
+    </article>
+
+    <article class="card article-preview">
+        <div class="card-body ">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet volutpat consequat mauris nunc congue. Dapibus ultrices in iaculis nunc sed augue lacus viverra.
+            </p>
+            <a href="#" class="card-link">Card link</a>
+        </div>
+    </article>
+
+    <article class="card article-preview">
+        <div class="card-body ">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet volutpat consequat mauris nunc congue. Dapibus ultrices in iaculis nunc sed augue lacus viverra.
+            </p>
+            <a href="#" class="card-link">Card link</a>
+        </div>
+    </article>
+
+    <article class="card article-preview">
+        <div class="card-body ">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet volutpat consequat mauris nunc congue. Dapibus ultrices in iaculis nunc sed augue lacus viverra.
+            </p>
+            <a href="#" class="card-link">Card link</a>
+        </div>
+    </article>
+
+    <article class="card article-preview">
+        <div class="card-body ">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet volutpat consequat mauris nunc congue. Dapibus ultrices in iaculis nunc sed augue lacus viverra.
+            </p>
+            <a href="#" class="card-link">Card link</a>
+        </div>
+    </article>
+
+    <article class="card article-preview">
+        <div class="card-body ">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet volutpat consequat mauris nunc congue. Dapibus ultrices in iaculis nunc sed augue lacus viverra.
+            </p>
+            <a href="#" class="card-link">Card link</a>
+        </div>
+    </article>
+</section>
+
+
